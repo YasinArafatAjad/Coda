@@ -1,0 +1,465 @@
+/* === Common Css Start === */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.vewport{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* === Common Css End === */
+/* === Header Css Start === */
+#header{
+    padding-top: 50px;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    pointer-events: none;
+}
+/* == Navbar == */
+.navbar ul{
+    display: flex;   
+    height: 100%;
+}
+.navbar ul li a{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    height: 100%;
+    line-height: 40px;
+    padding: 0 17px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    transition: all linear 0.3s;
+    border-radius: 5px;
+}
+.navbar ul li a:hover{
+    background: rgba(0,0,0,0.28);
+}
+/* === Header Css End === */
+/* === Banner Css Start === */
+#banner{
+    padding: 145px 0;
+    background: #87509c;
+}
+#banner p{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 48px;
+    width: 885px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    text-align: center;
+}
+#banner p span{
+    display: block;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 29px 89px;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background: rgba(0,0,0,0.15);
+}
+#banner button{
+background: #eb7d4b;
+}
+/* === Banner Css End === */
+/* === Service Css Start === */
+.tittle{
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+.tittle h2{
+    color: #3c4761;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 29px;
+    padding: 18px 0;
+    position: relative;
+}
+.tittle h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 90px;
+    border-radius: 4px;
+    background: #c8d9e5;
+}
+.tittle p{
+    padding-top: 25px;
+    padding-bottom: 80px;
+    color: #3c4761;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+#service .tittle h2,
+#service .tittle p{
+    color: #fff;
+}
+#service{
+    padding: 115px 0 130px 0;
+    background: #17c2a4;
+}
+.service-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    width: 22%;
+    text-align: center;
+}
+.service-item .serv-desc{
+    margin-top: 60px;
+}
+.service-item .serv-desc h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+.service-item .serv-desc p{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* === Service Css End === */
+/* === Team Css Start === */
+#team{
+padding: 115px 0 130px 0;
+background: #e7f1f8;
+}
+.team-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.team-item{
+    width: 22%;
+    text-align: center;
+}
+.team-item .team-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.team-item .team-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.team-item .team-desc{
+    margin-top: 40px;
+}
+.team-item .team-desc h2{
+    color: #27283d;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.team-item .team-desc span{
+    display: block;
+    color: #30bae7;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+.team-item .team-desc p{
+    color: #3c4761;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 16;
+    line-height: 24px;
+    margin-bottom: 30px;
+    height: 120px;
+}
+.team-item .team-desc .team-icon{
+    display: flex;
+    justify-content: center;
+}
+.team-item .team-desc .team-icon i{
+    color: #fff;
+    background: #bdd1df;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-right: 14px;
+    padding: 7px;
+}
+/* === Team Css End === */
+/* === Skill Css Start === */
+#skill{
+    padding: 115px 0 130px 0;
+    background: #fff;
+}
+.skill-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-item{
+    width: 22%;
+    text-align: center;
+}
+.skill-item .skill-rate{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: #30bae7 solid 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.skill-item .skill-rate p{
+    color: #3c4761;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 195px;
+}
+.skill-item h2{
+    color: #3c4761;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.skill-item:nth-child(2) .skill-rate{
+    border-color: #d74680;
+}
+.skill-item:nth-child(3) .skill-rate{
+    border-color: #15c7a8;
+}
+.skill-item:last-child .skill-rate{
+    border-color: #eb7d4b;
+}
+/* === Skill Css End === */
+/* === Portfolio Css Start === */
+#portfolio{
+    padding: 115px 0 130px 0;
+    background: #ffdd99;
+}
+#portfolio ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+}
+#portfolio ul li a{
+    color: #27283d;
+    margin-right: 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.1);
+    transition: all linear 0.3s;
+}
+#portfolio ul li a:hover{
+    background: #fff;
+}
+.portfolio-item-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px 0;
+}
+.portfolio-item{
+    width: 48%;
+    height: 300px;
+}
+.portfolio-item .port-img{
+    margin-bottom: 30px;
+}
+.portfolio-item .port-img img{
+    height: 100%;
+    width: 100%;
+}
+.portfolio-item h2{
+    color: #393939;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+}
+#portfolio button{
+    background: #17c2a4;
+    margin-top: 150px;
+}
+/* === Portfolio Css End === */
+/* === Testimonial Css Start === */
+#testimonial{
+    padding: 115px 0 130px 0;
+    background: #d74680;
+}
+#testimonial .tittle h2,
+#testimonial .tittle p{
+    color: #fff;
+}
+.revew-wrap{
+    display: flex;
+    justify-content: space-around;
+    gap: 70px 20px;
+    flex-wrap: wrap;
+}
+.revew{
+    display: flex;
+    justify-content: space-around;
+    width: 48%;
+    height: 150px;
+}
+.revew-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+}
+.revew-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.revew-desc{
+    width: 45%;
+}
+.revew-desc q{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 31px;
+    text-align: left;
+}
+.revew-desc h2{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 15px;
+}
+.revew-desc span{
+    color: #ffdd99;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+}
+/* === Testimonial Css End === */
+/* === Contact Css Start === */
+#contact{
+    padding: 115px 0 130px 0;
+    background: #3c5499;
+}
+#contact .tittle h2,
+#contact .tittle p{
+    color: #fff;
+}
+#contact button{
+    background: #30bae7;
+}
+.formfield{
+    display: flex;
+    justify-content: center;
+}
+.formfield form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.formfield form .form-row{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.formfield form .form-row input[type='text'],
+.formfield form .form-row input[type='email'],
+.formfield form .form-row input[type='text']::placeholder,
+.formfield form .form-row input[type='email']::placeholder,
+.formfield form textarea,
+.formfield form textarea::placeholder{
+    padding: 10px;
+    background: #273a71;
+    border-radius: 5px;
+    width: 50%;
+    color: #fff;
+    border: 0;
+    outline: none;    
+    margin-bottom: 30px;
+}
+.formfield form textarea{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 20px;
+    resize: none;
+}
+/* === Contact Css End === */
+/* === Footer Css Start === */
+#footer{
+    background: #344b8e;
+    padding: 45px 0;
+}
+#footer .social-link{
+    display: flex;
+    justify-content:space-evenly;
+}
+#footer .social-link a{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 29px;
+    transition: all linear .3s;
+}
+#footer .social-link a:hover{
+    color: #30bae7;
+}
+/* === Footer Css End === */
